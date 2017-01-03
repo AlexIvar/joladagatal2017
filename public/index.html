@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>AlexÍvar</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
+		<script src="javascripts/chirpApp.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheets/style.css">
+	</head>
+	<body ng-app="chirpApp">
+
+	<!--	<div style="padding-top:0px; padding-bottom:0px; backround-size:100% 100%; margin-top:-20px">-->
+			<!--<div class="container">-->
+				<!--<div class="row-fluid">
+					<img src="https://s26.postimg.org/bl5qygcrd/hm_image.png" style="max-width:100%">
+				</div>-->
+		<!--	</div>-->
+	<!--</div>-->
+
+	<!--	<header>
+      <img src="https://s27.postimg.org/b0aysrzgj/hm_image.pn" style="max-width:100%">
+		</header>-->
+	<!--	<div class="container-fluid" id="topImage">
+	 ...
+ </div>-->
+	 <div id='main' class="container">
+			<nav class="navbar-fluid navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<a class="navbar-brand" href="#"> History Makers <small>Iceland</small> </a>
+					<p class="navbar-right navbar-text"><a href="#/about" >About</a></p>
+					<p class="navbar-right navbar-text" ng-show="authenticated"><a ng-click="signout()">signout</a></p>
+				</div>
+			</nav>
+			<div class="col-md-offset-2 col-md-8">
+				<div ng-view>
+				</div>
+			</div>
+		</div>
+	</body>
+<html>

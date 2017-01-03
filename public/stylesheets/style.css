@@ -1,0 +1,23 @@
+body {
+	padding-top:70px;
+	width: 100%;
+    height: 100%;
+	width: 100%;
+    height: 100%;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#topImage{
+   margin-top: -20px;
+   padding-bottom: 337px;
+	 background-image: url("https://s27.postimg.org/b0aysrzgj/hm_image.png");
+	 background-repeat: no-repeat;
+
+}
+
+a{
+	color: white;
+}
+a:hover{
+	color:white;
+}
