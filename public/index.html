@@ -1,382 +1,519 @@
-<html>
-	<head>
-		<title>History Makers</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
-		<script src="javascripts/chirpApp.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-		<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
 
-	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-	<!-- Material Design Bootstrap -->
-	<link href="css/mdb.css" rel="stylesheet" >
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
-	<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
-	<link rel="stylesheet" href="stylesheets/style.css">
 
-	</head>
 
-	<!--Navbar-->
-	<nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+		.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 10px;
+  width: auto;
+}
 
-			<!-- Collapse button-->
-			<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-					<i class="fa fa-bars"></i>
-			</button>
+		.card-text{
+			font-size:14px;
+			text-align:left;
+		}
+		.swiper-testemonies{
+			width: 60%;
+			height: 60%;
+			padding: 10px;
+			float: none;
+			margin: 0 auto;
+			color:black;
+		}
+		.swiper-container {
+			width: 79%;
+height: 70%;
+margin-bottom: 5px;
+margin-top: 85px;
 
-			<div class="container">
+    }
 
-					<!--Collapse content-->
-					<div class="collapse navbar-toggleable-xs" id="collapseEx">
-							<!--Navbar Brand-->
-							<a class="navbar-brand" href="#">History Makers</a>
-							<!--Links-->
-							<ul class="nav navbar-nav smooth-scroll">
+    /*simi*/
+		@media (max-width: 480px) {
+			.card-text{
+				font-size:10px;
+				text-align:left;
+			}
+			.swiper-testemonies{
+				width: 100%;
+				height: 100%;
+				padding: 10px;
+				float: none;
+		    margin: 0 auto;
+				color:black;
+			}
+			.swiper-container {
+	        width: 100%;
+	        height: 70%;
 
-									<li class="nav-item">
-											<a class="nav-link" href="#mission">The Mission</a>
-									</li>
-									<li class="nav-item">
-											<a class="nav-link" href="#about">About</a>
-									</li>
-									<li class="nav-item">
-											<a class="nav-link" href="#testimonials">Testimonials</a>
-									</li>
-									<li class="nav-item">
-											<a class="nav-link" href="#">Sign up!</a>
-									</li>
-							</ul>
+	    }
+		}
 
-							<ul class="nav navbar-nav nav-flex-icons">
-											 <li class="nav-item wow fadeInRight" data-wow-delay="0.2s">
-													 <a class="nav-link"><i class="fa fa-facebook-square"></i></a>
-											 </li>
-											 <li class="nav-item wow fadeInRight" data-wow-delay="0.4s">
-													 <a class="nav-link"><i class="fa fa-instagram"></i></a>
-											 </li>
-											 <li class="nav-item wow fadeInRight" data-wow-delay="0.8s">
-													 <a class="nav-link"><i class="fa fa-twitter"></i></a>
-											 </li>
-											 <li class="nav-item wow fadeInRight" data-wow-delay="0.8s">
-													<a class="nav-link"><i class="fa fa-youtube"></i></a>
-											</li>
-									 </ul>
+/*ipad*/
+@media (min-width: 768px) and (max-width: 979px) {
+	.swiper-container {
+			width: 93%;
+			height: 70%;
 
-					</div>
-					<!--/.Collapse content-->
+	}
+}
 
-			</div>
 
+		#swiper-box{
+			padding-top: 125px;
+			padding-bottom: 125px;
+			padding-right: 75px;
+			padding-left: 75px;
+			margin-top: 0px;
+			margin-bottom: 25px;
+		}
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+
+				background-position: center;
+        background-size: cover;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
+		#section1 {
+		padding-top: 150px;
+    padding-bottom: 125px;
+    padding-right: 75px;
+    padding-left: 75px;
+		margin-top: 0px;
+		margin-bottom: 5px;
+		color: #fff;
+		background-color: #1E88E5;}
+		#section2 {
+			padding-top: 125px;
+	    padding-bottom: 125px;
+	    padding-right: 75px;
+	    padding-left: 75px;
+			margin-top: 0px;
+			margin-bottom: 5px;
+			color: #fff;
+			background-color: #1E88E5;}
+		#section3 {
+			padding-top: 125px;
+	    padding-bottom: 125px;
+	    padding-right: 75px;
+	    padding-left: 75px;
+			margin-top: 0px;
+			margin-bottom: 5px;
+			color: #fff;
+			background-color: #1E88E5;}
+		#section4 {
+			padding-top: 125px;
+	    padding-bottom: 125px;
+	    padding-right: 75px;
+	    padding-left: 75px;
+			margin-top: 0px;
+			margin-bottom: 5px;
+			color: #fff;
+			background-color: #673ab7;}
+		#section5 {
+			padding-top: 125px;
+	    padding-bottom: 125px;
+	    padding-right: 75px;
+	    padding-left: 75px;
+			margin-top: 0px;
+			margin-bottom: 5px;
+			color: #fff;
+			background-color: #ff9800;}
+
+#testPicture{
+	width:100px; /*width of your image*/
+	height:100px; /*height of your image*/
+	background-image:url('https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg');
+	margin:0; /* If you want no margin */
+	padding:0; /*if your want to padding */
+}
+
+/*#testa-left{
+	background-color:orange;
+
+}
+
+#testa-right{
+
+		background-color:purple;
+		font-size:10px;
+}*/
+
+.js-video {
+  height: 0;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.js-video.widescreen {
+  padding-bottom: 56.34%;
+}
+
+.js-video.vimeo {
+  padding-top: 0;
+}
+
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+	  </style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<nav class="navbar navbar-light fixed-top navbar-toggleable-md" style="background-color:#fff">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <a class="navbar-brand" href="#" ><img src="https://s26.postimg.org/4o06gndzt/hm_logo.png" alt="History Makers"></a>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item ">
+	        <a class="nav-link" href="#section1">Home <span class="sr-only">(current)</span></a>
+	      </li>
+				<li class="nav-item">
+	        <a class="nav-link" href="#section2">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#section3">Testemonies</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#section4">Staff</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#section5">Sign up</a>
+	      </li>
+	    </ul>
+	  </div>
 	</nav>
-	<!--/.Navbar-->
-	<body ng-app="chirpApp">
 
 
+    <!-- Swiper -->
 
-		<!--Carousel Wrapper-->
-		<div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
-				<!--Indicators-->
-				<!--<ol class="carousel-indicators">
-						<li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
-						<li data-target="#video-carousel-example2" data-slide-to="1"></li>
-						<li data-target="#video-carousel-example2" data-slide-to="2"></li>
-				</ol>-->
-				<!--/.Indicators-->
-
-				<!--Slides-->
-				<div class="carousel-inner" role="listbox">
-						<!--First slide-->
-					<!--  <div class="carousel-item">
-
-								<div class="view hm-black-light">
-
-										<video class="video-full" autoplay loop>
-												<source src="http://mdbootstrap.com/images/video/Strum-Away.mp4" type="video/mp4" />
-										</video>
-										<div class="full-bg-img"></div>
-								</div>
-
-
-								<div class="carousel-caption">
-										<div class="flex-center animated fadeInDown">
-												<ul>
-														<li>
-																<h1 class="h1-responsive">Material Design for Bootstrap 4</h1></li>
-														<li>
-																<p>The most powerful and free UI KIT for Bootstrap</p>
-														</li>
-														<li>
-																<a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg">Sign up!</a>
-																<a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default btn-lg">Learn more</a>
-														</li>
-												</ul>
-										</div>
-								</div>
-
-						</div>-->
-						<!--/First slide-->
-
-						<!--Second slide-->
-					<!--  <div class="carousel-item">
-
-								<div class="view hm-black-light">
-
-										<video class="video-full" autoplay loop>
-												<source src="http://mdbootstrap.com/images/video/Beach-Ball.mp4" type="video/mp4" />
-										</video>
-										<div class="mask"></div>
-								</div>
-
-
-								<div class="carousel-caption">
-										<div class="flex-center animated fadeInDown">
-												<ul>
-														<li>
-																<h1 class="h1-responsive">Lots of tutorials at your disposal</h1>
-														</li>
-														<li>
-																<p>And all of them are FREE!</p>
-														</li>
-														<li>
-																<a target="_blank" href="http://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-primary btn-lg">Start learning</a>
-														</li>
-												</ul>
-										</div>
-								</div>
-
-						</div>-->
-						<!--/Second slide-->
-
-						<!--Third slide-->
-						<div class="carousel-item active">
-								<!--Mask color-->
-								<div class="view hm-black-strong">
-										<!--Video source-->
-										<video class="video-full" autoplay loop>
-												<source src="http://mdbootstrap.com/images/video/Nature-Sunset.mp4" type="video/mp4" />
-										</video>
-										<div class="mask"></div>
-								</div>
-
-								<!--Caption-->
-								<div class="carousel-caption">
-										<div class="flex-center animated fadeIn">
-												<ul>
-														<li>
-																<h1 class="h1-responsive">History Makers</h1></li>
-														<li>
-																<p>Iceland</p>
-														</li>
-														<li>
-															<a target="_blank" href="#" class="btn btn-primary btn-lg">Sign up!</a>
-															<a target="_blank" href="#/about" class="btn btn-default btn-lg">Learn more</a>
-														</li>
-												</ul>
-										</div>
-								</div>
-								<!--/.Caption-->
-						</div>
-						<!--/Third slide-->
-				</div>
-				<!--/.Slides-->
-
-				<!--Controls-->
-				<!--<a class="left carousel-control" href="#video-carousel-example2" role="button" data-slide="prev">
-						<span class="icon-prev" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#video-carousel-example2" role="button" data-slide="next">
-						<span class="icon-next" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-				</a>-->
-				<!--/.Controls-->
-		</div>
-		<!--/.Carousel Wrapper-->
-
-		<!--/.Main layout-->
-
-		<div class="row">
-		    <div class="col-md-12">
-
-		        <div id="mdb-lightbox-ui"></div>
-
-		        <div class="mdb-lightbox no-margin">
-
-
-		            <figure class="col-md-4">
-		                <a href="http://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(111).jpg" data-size="1600x1067">
-		                    <img src="http://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(111).jpg" class="img-fluid">
-		                </a>
-		            </figure>
-
-		            <figure class="col-md-4">
-		                <a href="http://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(112).jpg" data-size="1600x1067">
-		                    <img src="http://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(112).jpg" class="img-fluid" />
-		                </a>
-		            </figure>
-
-		            <figure class="col-md-4">
-		                <a href="http://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(66).jpg" data-size="1600x1067">
-		                    <img src="http://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(66).jpg" class="img-fluid" />
-		                </a>
-		            </figure>
-
-		            <figure class="col-md-4">
-		                <a href="http://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(5).jpg" data-size="1600x1067">
-		                    <img src="http://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(5).jpg" class="img-fluid" />
-		                </a>
-		            </figure>
-
-		            <figure class="col-md-4">
-		                <a href="http://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(46).jpg" data-size="1600x1067">
-		                    <img src="http://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(46).jpg" class="img-fluid" />
-		                </a>
-		            </figure>
-
-		            <figure class="col-md-4">
-		                <a href="http://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(113).jpg" data-size="1600x1067">
-		                    <img src="http://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(113).jpg" class="img-fluid" />
-		                </a>
-		            </figure>
-
-		            <figure class="col-md-4">
-		                <a href="http://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(51).jpg" data-size="1600x1067">
-		                    <img src="http://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg" class="img-fluid" />
-		                </a>
-		            </figure>
-
-		            <figure class="col-md-4">
-		                <a href="http://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(9).jpg" data-size="1600x1067">
-		                    <img src="http://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(9).jpg" class="img-fluid" />
-		                </a>
-		            </figure>
-
-		            <figure class="col-md-4">
-		                <a href="http://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(11).jpg" data-size="1600x1067">
-		                    <img src="http://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(11).jpg" class="img-fluid" />
-		                </a>
-		            </figure>
-
-		        </div>
-
-		    </div>
-		</div>
-
-		<main>
-		        <div class="container">
-
-<!--Section: Blog v.4-->
-<section class="section section-blog-fw" id="mission">
-
-    <hr>
-
-    <!--Second row-->
-    <div class="row">
-        <div class="col-md-12">
-            <!--Featured image-->
-            <div class="view overlay hm-white-slight">
-                <img src="https://s26.postimg.org/i24wcves9/hmhopur.jpg" >
-                <a>
-                    <div class="mask "></div>
-                </a>
-            </div>
-
-            <!--Post data-->
-            <div class="jumbotron">
-                <h2><a>The Mission</a></h2>
-                <p>Loerum ipsum dolor sit amet</p>
-
-
-
-            </div>
-            <!--/Post data-->
-
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">History Makers</div>
+            <div class="swiper-slide" style="background-image:url(https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg"></div>
+            <div class="swiper-slide" style="">Slide 3</div>
+            <div class="swiper-slide" style="background-image:url(https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg">Slide 4</div>
+            <div class="swiper-slide" style="">Slide 5</div>
+            <div class="swiper-slide" style="">Slide 6</div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
-    <!--/Second row-->
-
-    <hr>
-
-</section>
-<!--/Section: Blog v.4-->
-
-		            <!--Section: Features v.2-->
-		            <!--<section class="section feature-box" id="mission">
-
-
-		                <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">The Mission</h1>
-
-											<img src="https://s26.postimg.org/y5hdcogbd/hmhopur.jpg" class="img-fluid m-x-auto d-block" width="600px" height="300px" alt="Responsive image">
-
-
-		                <p class="section-description lead wow fadeIn" data-wow-delay="0.4s">The History Maker's mission is to train and mobilise leaders of leaders to reach their nations with the gospel.</p>
-
-
-
-		            </section>-->
-								<hr class="between-sections">
+		<div id="section1" class="container">
+		  <h1>Home</h1>
+			<div class="row">
+  <div class="col-sm-5 col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Hugsjón History Makers er að breyta mannkynssögunni með útbreiðslu fagnaðarerindisins gengnum leiðtoga sem fylltir eru Heilögum anda.</div>
+  <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+		<div class="card" data-aos="zoom-in" data-aos-duration="1000">
+		<div class="js-video [vimeo, widescreen]">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Wbare6EFNuM" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<!--<h4 class="card-title" style="color:black;">History Makers 2016</h4>
+		<p class="card-text" style="color:black;">
+			<small class="text-muted">Check out our video!</small>
+		</p>-->
+</div></div>
 </div>
 
-<!--<div class="container">
-								<section class="section feature-box" id="about">
-									<h1>About</h1>
-	<div class="embed-responsive embed-responsive-16by9">
-	    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wbare6EFNuM" allowfullscreen></iframe>
-	</div>
-</section>
-			</div>-->
-							</main>
 
-	 <!--Footer-->
-	     <footer class="page-footer center-on-small-only">
+			</div>
+		<div id="section2" class="container">
+			<h1>About</h1>
+			<div class="row">
+  <div class="col-md-4" data-aos="flip-left" data-aos-duration="1000">
+        <img src="https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg" class="img-thumbnail">
+  </div>
+  <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000">
+    <p>
+			The History Maker's <strong>MISSION</strong> is to train and mobilise leaders of leaders to reach their nations with the gospel.
+		</p>
+  </div>
+</div>
+		</div>
+		<section id="section3" class="container">
+		  <h1>Testemonies</h1>
+			<div class="swiper-testemonies">
+					<div class="swiper-wrapper">
+							<div class="swiper-slide">
+							<!--	<div class="row">-->
+									<div class="card">
+	  <img class="card-img-top" src="https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg" style="width:100%;
+  height:auto;" >
+	  <div class="card-block">
+	    <p class="card-text">"Ég fór á History Makers sem er alveg frábært leiðtoganámskeið haldið uppí koti sem er mér rosa kært. Ég fór á staðinn með miklar eftirvæntingar og vonir um yndislegan tíma með dásamlegu fólki, mig langaði samt allra mest að kynnast Guði betur og draga mig nær honum, sem gerðist heldur betur! Ég lærði marga praktíska hluti sem gera mig að betri leiðtoga og fyrirmynd, ekki bara í kirkjunni minni heldur líka yfirleitt í daglega lífinu.Ég lærði að setja mér raunhæf markmið, sem allir þyrftu að læra, og hvernig ég ætti að haga mér við ýmsar aðstæður. Ég lærði líka hvað merkir að vera raunverulega kristinn einstaklingur. Það voru fullt af hlutum á þessu námskeiði sem ég hef aldrei látið mig pæla í áður, td. með andlegar gjafir og sýn frá Guði fyrir líf mitt. Guð hefur ekki enn opinberað þessa hluti fyrir mér en ég trúi því að hann muni gera það fyrr en varir en fyrsta skrefið er einmitt að treysta Guði því hann mun vel fyrir sjá!"</p>
+	    <p class="card-text" style="text-align:center;"><small class="text-muted">Elísabet Guðnadóttir</small></p>
+	  </div>
+	<!--</div>-->
+						  </div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+								  <img class="card-img-top" src="https://s26.postimg.org/5js2icyah/testamonie_Photo.jpg" style="width:100%;
+							  height:auto;" >
+								  <div class="card-block">
+								    <p class="card-text">"Ég heyrði um History makers námskeiðið á Lindinni. Ég heyrði að þetta væri námskeið fyrir kristilega leiðtoga sem vildu hjálpa til við að gera Ísland að betra samfélagi. Ég var forvitin og vildi endilega taka þátt. History makers námskeiðið gaf mér tækifæri á að komast nær sjálfi mér og ég komst að því að mikilvægasti þátturinn í göngu minni með Guði væri að rækta mitt persónulegt samband við hann í heiðarleika. Það var mjög dýrmætt. Ég komst einnig að því að jákvæðar breytingar í samfélaginu byrja alltaf á því að við skoðum okkur sjálf og að við vitum hver við erum í Kristi. Ég fékk helling út úr þessu námskeiði og það var virkilega uppbyggjandi að vera innan um kærleiksríkt og hvetjandi fólk. Það var einnig fræðandi og skemmtilegt að ræða saman í hópum og kynnast nýju fólki frá Íslandi og öðrum löndum. Ég mæli svo sannarlega með þessu námskeiði fyrir alla sem hafa áhuga á kristilegu leiðtogastarfi."</p>
+										<p class="card-text" style="text-align:center;"><small class="text-muted">Júlíanna Sigtryggsdóttir</small></p>
+									</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next swiper-button-white" style="margin-right:-39px;"></div>
+					<div class="swiper-button-prev swiper-button-white" style="margin-left: -39px;"></div>
+			</div>
+		<!--	<div class="test">
+			  <div>
+					<div class="card" style="width: 235px;">
+						<img class="card-img-top" src="https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg" alt="Card image cap" style="height:200px; width:235px;">
+				    <div class="card-block">
+				      <h4 class="card-title">Card title</h4>
+				      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+					</div>
+				</div>
+			  <div>
+					<div class="card" style="width: 235px;">
+						<img class="card-img-top" src="https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg" alt="Card image cap" style="height:200px; width:235px;">
+				    <div class="card-block">
+				      <h4 class="card-title">Card title</h4>
+				      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+					</div>
+			  </div>
+			  <div>
+					<div class="card" style="width: 235px;">
+						<img class="card-img-top" src="https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg" alt="Card image cap" style="height:200px; width:235px;">
+				    <div class="card-block">
+				      <h4 class="card-title">Card title</h4>
+				      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+					</div>
+			  </div>
+			  <div>
+					<div class="card" style="width: 235px;">
+						<img class="card-img-top" src="https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg" alt="Card image cap" style="height:200px; width:235px;">
+						<div class="card-block">
+							<h4 class="card-title">Card title</h4>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+				</div>
+			  <div>
+					<div class="card" style="width: 235px;">
+						<img class="card-img-top" src="https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg" alt="Card image cap" style="height:200px; width:235px;">
+				    <div class="card-block">
+				      <h4 class="card-title">Card title</h4>
+				      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+					</div>
+			  </div>
+			  <div>
+					<div class="card" style="width: 235px;">
+						<img class="card-img-top" src="https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg" alt="Card image cap" style="height:200px; width:235px;">
+				    <div class="card-block">
+				      <h4 class="card-title">Card title</h4>
+				      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+					</div>
+			  </div>
+			</div>
+
+			 <button class="prev"></button>
+			 <button class="next"></button>-->
+
+		</section>
+		<div id="section4" class="container">
+			<h1>Staff</h1>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		</div>
+		<div id="section5" class="container">
+			<h1>Sign up</h1>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		</div>
+
+    <!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 
-	         <!--Call to action-->
-	         <div class="call-to-action">
-	             <h4>Follow us on social media!</h4>
-	             <ul>
-	                 <li>
-	                 <li><a href="https://www.facebook.com/historymakersiceland" target="_blank" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"> </i></a></li>
-									 <li><a href="https://www.instagram.com/historymakersiceland/" target="_blank" class="btn-floating btn-small btn-ins"><i class="fa fa-instagram"> </i></a></li>
-									 <li><a href="#" target="_blank" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"> </i></a></li>
-									 <li><a href="https://www.youtube.com/channel/UCaBwy40wCyEfDiltSxI-vLA" target="_blank" class="btn-floating btn-small btn-yt"><i class="fa fa-youtube"> </i></a></li>
-	             </ul>
-	         </div>
-	         <!--/.Call to action-->
 
-	         <!--Copyright-->
-	         <div class="footer-copyright">
-	             <div class="container-fluid">
-	                 © 2017 Copyright: Alex Ívar</a>
+    <!-- Initialize Swiper -->
+    <script>
+		  AOS.init();
 
-	             </div>
-	         </div>
-	         <!--/.Copyright-->
+		$(function() {
+    console.log( "ready!" );
+		$(".test").slick({
+ infinite: false,
+ speed: 300,
+ slidesToShow: 4,
+ slidesToScroll: 4,
+ prevArrow: $('.prev'),
+ nextArrow: $('.next'),
+ responsive: [
+	 {
+		 breakpoint: 1024,
+		 settings: {
+			 slidesToShow: 3,
+			 slidesToScroll: 3,
+			 prevArrow: $('.prev'),
+			 nextArrow: $('.next'),
+			 infinite: true,
+		 }
+	 },
+	 {
+		 breakpoint: 600,
+		 settings: {
+			 slidesToShow: 2,
+			 slidesToScroll: 2,
 
-	     </footer>
-	     <!--/.Footer-->
-    <!--/.Footer-->
-		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+			 prevArrow: $('.prev'),
+			 nextArrow: $('.next'),
+		 }
+	 },
+	 {
+		 breakpoint: 480,
+		 settings: {
+			 slidesToShow: 1,
+			 slidesToScroll: 1,
 
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/tether.min.js"></script>
+			 prevArrow: $('.prev'),
+			 nextArrow: $('.next'),
+		 }
+	 }
+	 // You can unslick at a given breakpoint now by adding:
+	 // settings: "unslick"
+	 // instead of a settings object
+ ]	});
 
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 7000,
+        autoplayDisableOnInteraction: false,
+				speed: 600,
+				effect: 'fade',
+				zoom: true
+    });
 
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+		var swiper2 = new Swiper('.swiper-testemonies', {
 
-		<script type="text/javascript">
-
-		$(function () {
-		$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+			effect: 'flip',
+			grabCursor: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
 		});
-		</script>
 
-	</body>
-<html>
+
+		//navbar smooth scroll
+		$(".navbar .collapse ul li a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 2000, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+var navMain = $("#navbarSupportedContent");
+	 navMain.on("click", "a", null, function () {
+			 navMain.collapse('hide');
+	 });
+		});
+    </script>
+</body>
+</html>
