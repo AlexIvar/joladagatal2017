@@ -405,10 +405,10 @@ margin-top: 85px;
 					<div class="flip-container">
 									<div id="card" class="flipper">
 										<div class="front">
-											The front face
+											Einar Aron
 										</div>
 										<div class="back">
-											The back face
+											About
 										</div>
 									</div>
 								</div>
@@ -417,10 +417,10 @@ margin-top: 85px;
 					<div class="flip-container">
 									<div id="card2" class="flipper">
 										<div class="front">
-											The front face
+											Sóley Rut
 										</div>
 										<div class="back">
-											The back face
+											About
 										</div>
 									</div>
 								</div>
@@ -428,12 +428,12 @@ margin-top: 85px;
 				</div>
 				<div class="col-sm">
 					<div class="flip-container">
-									<div id="card2" class="flipper">
+									<div id="card3" class="flipper">
 										<div class="front">
-											The front face
+											Linda
 										</div>
 										<div class="back">
-											The back face
+											About
 										</div>
 									</div>
 								</div>
@@ -441,12 +441,12 @@ margin-top: 85px;
 				</div>
 				<div class="col-sm">
 					<div class="flip-container">
-									<div id="card2" class="flipper">
+									<div id="card4" class="flipper">
 										<div class="front">
-											The front face
+											Davíð
 										</div>
 										<div class="back">
-											The back face
+											About
 										</div>
 									</div>
 								</div>
@@ -454,12 +454,12 @@ margin-top: 85px;
 				</div>
 				<div class="col-sm">
 					<div class="flip-container">
-									<div id="card2" class="flipper">
+									<div id="card5" class="flipper">
 										<div class="front">
-											The front face
+											Inga María
 										</div>
 										<div class="back">
-											The back face
+											About
 										</div>
 									</div>
 								</div>
@@ -467,7 +467,7 @@ margin-top: 85px;
 				</div>
 				<div class="col-sm">
 					<div class="flip-container">
-									<div id="card2" class="flipper">
+									<div id="card6" class="flipper">
 										<div class="front">
 											The front face
 										</div>
@@ -552,6 +552,54 @@ margin-top: 85px;
 			var card2 = document.getElementById('card2');
 
 			card2.addEventListener('click', function() {
+				if (!this.classList.contains('on')) {
+					this.classList.remove('off');
+					this.classList.add('on');
+				} else {
+					this.classList.remove('on');
+					this.classList.add('off');
+				}
+			});
+
+			var card3 = document.getElementById('card3');
+
+			card3.addEventListener('click', function() {
+				if (!this.classList.contains('on')) {
+					this.classList.remove('off');
+					this.classList.add('on');
+				} else {
+					this.classList.remove('on');
+					this.classList.add('off');
+				}
+			});
+
+			var card4 = document.getElementById('card4');
+
+			card4.addEventListener('click', function() {
+				if (!this.classList.contains('on')) {
+					this.classList.remove('off');
+					this.classList.add('on');
+				} else {
+					this.classList.remove('on');
+					this.classList.add('off');
+				}
+			});
+
+			var card5 = document.getElementById('card5');
+
+			card5.addEventListener('click', function() {
+				if (!this.classList.contains('on')) {
+					this.classList.remove('off');
+					this.classList.add('on');
+				} else {
+					this.classList.remove('on');
+					this.classList.add('off');
+				}
+			});
+
+			var card6 = document.getElementById('card6');
+
+			card6.addEventListener('click', function() {
 				if (!this.classList.contains('on')) {
 					this.classList.remove('off');
 					this.classList.add('on');
