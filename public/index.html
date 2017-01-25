@@ -235,54 +235,52 @@ margin-top: 85px;
   height: 100%;
   position: absolute;
 }
+/*car flipp*/
+.flip-container {
+	-webkit-perspective: 1000;
+	width: 260px;
+	cursor: pointer;
+	margin-top:10px;
+}
 
+.flipper {
+	transition: 0.6s;
+	-webkit-transform-origin: 100% 200px;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+	height: 400px;
+}
 
-/*flipp card----*/
-.info-card {
-    float: left;
-	margin: 10px;
-	-webkit-perspective: 600px;
+.on {
+	-webkit-transform: rotateX(-180deg);
+}
+
+.off {
+	-webkit-transform: rotateX(0deg);
 }
 
 .front, .back {
-	background: #FFF;
-	border-radius: 10px;
-	transition: -webkit-transform 1s;
-	-webkit-transform-style: preserve-3d;
+	width: 260px;
+	height: 400px;
+	position: absolute;
 	-webkit-backface-visibility: hidden;
-	border: 1px solid black;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+	font-size: 2em;
+	line-height: 400px;
+	text-align: center;
 }
 
 .front {
-	overflow: hidden;
-	width: 250px;
-	height: 330px;
-	position: absolute;
-	z-index: 1;
+	background: #2ecc71;
 }
 
-.back {
-	padding: 20px;
-	padding-top: 0px;
-	width: 250px;
-	height: 330px;
-	-webkit-transform: rotateY(-180deg);
-	overflow: scroll;
+.flip-container .back {
+	background: #3498db;
+	-webkit-transform: rotateX(180deg);
 }
-
-.info-card:hover .back {
-	-webkit-transform: rotateY(0);
-}
-
-.info-card:hover .front {
-	-webkit-transform: rotateY(180deg);
-}
-
-
-
-/*flip card -------*/
-
-	  </style>
+/**/
+</style>
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -404,49 +402,80 @@ margin-top: 85px;
 			<h1>Staff</h1>
 			<div class="row">
 				<div class="col-sm">
-					<div class="info-card">
-				<div class="front">
-					<div class="card" style="height: 306px;">
-						<img class="card-img-top" src="https://s26.postimg.org/5js2icyah/testamonie_Photo.jpg" style="width:100%; height:auto;" >
-						<div class="card-block">
-					    <p class="card-text">this is some text</p>
-							<p class="card-text" style="text-align:center;"><small class="text-muted">Júlíanna Sigtryggsdóttir</small></p>
-						</div>
+					<div class="flip-container">
+									<div id="card" class="flipper">
+										<div class="front">
+											The front face
+										</div>
+										<div class="back">
+											The back face
+										</div>
+									</div>
+								</div>
 				</div>
-			</div>
-			<div class="back">
-				<div class="card" style="height: 306px;">
-					<img class="card-img-top" src="https://s26.postimg.org/5js2icyah/testamonie_Photo.jpg" style="width:100%; height:auto;" >
-					<div class="card-block">
-						<p class="card-text">this is some text</p>
-						<p class="card-text" style="text-align:center;"><small class="text-muted">Júlíanna Sigtryggsdóttir</small></p>
-					</div>
-			</div>
-		</div>
-	</div>
+				<div class="col-sm">
+					<div class="flip-container">
+									<div id="card2" class="flipper">
+										<div class="front">
+											The front face
+										</div>
+										<div class="back">
+											The back face
+										</div>
+									</div>
+								</div>
 
 				</div>
 				<div class="col-sm">
-					<div class="info-card">
-				<div class="front">
-					<div class="card" style="height: 306px;">
-						<img class="card-img-top" src="https://s26.postimg.org/5js2icyah/testamonie_Photo.jpg" style="width:100%; height:auto;" >
-						<div class="card-block">
-							<p class="card-text">this is some text</p>
-							<p class="card-text" style="text-align:center;"><small class="text-muted">Júlíanna Sigtryggsdóttir</small></p>
-						</div>
+					<div class="flip-container">
+									<div id="card2" class="flipper">
+										<div class="front">
+											The front face
+										</div>
+										<div class="back">
+											The back face
+										</div>
+									</div>
+								</div>
+
 				</div>
-			</div>
-			<div class="back">
-				<div class="card" style="height: 306px;">
-					<img class="card-img-top" src="https://s26.postimg.org/5js2icyah/testamonie_Photo.jpg" style="width:100%; height:auto;" >
-					<div class="card-block">
-						<p class="card-text">this is some text</p>
-						<p class="card-text" style="text-align:center;"><small class="text-muted">Júlíanna Sigtryggsdóttir</small></p>
-					</div>
-			</div>
-		</div>
-	</div>
+				<div class="col-sm">
+					<div class="flip-container">
+									<div id="card2" class="flipper">
+										<div class="front">
+											The front face
+										</div>
+										<div class="back">
+											The back face
+										</div>
+									</div>
+								</div>
+
+				</div>
+				<div class="col-sm">
+					<div class="flip-container">
+									<div id="card2" class="flipper">
+										<div class="front">
+											The front face
+										</div>
+										<div class="back">
+											The back face
+										</div>
+									</div>
+								</div>
+
+				</div>
+				<div class="col-sm">
+					<div class="flip-container">
+									<div id="card2" class="flipper">
+										<div class="front">
+											The front face
+										</div>
+										<div class="back">
+											The back face
+										</div>
+									</div>
+								</div>
 
 				</div>
 <!--  <div class="col-sm">
@@ -505,7 +534,33 @@ margin-top: 85px;
 
     <!-- Initialize Swiper -->
     <script>
+		//initialize AOS. Animations
 		  AOS.init();
+
+
+			var card = document.getElementById('card');
+
+			card.addEventListener('click', function() {
+				if (!this.classList.contains('on')) {
+					this.classList.remove('off');
+					this.classList.add('on');
+				} else {
+					this.classList.remove('on');
+					this.classList.add('off');
+				}
+			});
+			var card2 = document.getElementById('card2');
+
+			card2.addEventListener('click', function() {
+				if (!this.classList.contains('on')) {
+					this.classList.remove('off');
+					this.classList.add('on');
+				} else {
+					this.classList.remove('on');
+					this.classList.add('off');
+				}
+			});
+
 
 		$(function() {
     console.log( "ready!" );
@@ -563,7 +618,8 @@ margin-top: 85px;
         autoplayDisableOnInteraction: false,
 				speed: 600,
 				effect: 'fade',
-				zoom: true
+				zoom: true,
+				loop:true
     });
 
 		var swiper2 = new Swiper('.swiper-testemonies', {
