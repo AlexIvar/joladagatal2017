@@ -102,16 +102,6 @@ margin-top: 85px;
 	    }
 		}
 
-/*ipad*/
-@media (min-width: 768px) and (max-width: 979px) {
-	.swiper-container {
-			width: 93%;
-			height: 70%;
-
-	}
-}
-
-
 		#swiper-box{
 			padding-top: 125px;
 			padding-bottom: 125px;
@@ -280,6 +270,40 @@ margin-top: 85px;
 	-webkit-transform: rotateX(180deg);
 }
 /**/
+
+/*ipad*/
+@media (min-width: 768px) and (max-width: 979px) {
+	.swiper-container {
+			width: 93%;
+			height: 70%;
+
+	}
+	/*car flipp*/
+	.flip-container {
+		-webkit-perspective: 1000;
+		width: 240px;
+		cursor: pointer;
+		margin-top:10px;
+	}
+
+
+
+	.front, .back {
+		width: 240px;
+		height: 400px;
+		position: absolute;
+		-webkit-backface-visibility: hidden;
+		color: #fff;
+		text-shadow: 1px 1px #000;
+		font-size: 2em;
+		line-height: 400px;
+		text-align: center;
+	}
+
+
+	/**/
+}
+
 </style>
 
 </head>
