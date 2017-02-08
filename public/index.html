@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Swiper demo</title>
+    <title>History Makers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <!-- Link Swiper's CSS -->
@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
 
@@ -50,6 +50,14 @@
 			margin: 0 auto;
 			color:black;
 		}
+    .swiper-staff{
+			width: 60%;
+			height: 60%;
+			padding: 10px;
+			float: none;
+			margin: 0 auto;
+			color:black;
+		}
 		.swiper-container {
 			width: 79%;
 height: 70%;
@@ -65,6 +73,14 @@ margin-top: 85px;
 				text-align:left;
 			}
 			.swiper-testemonies{
+				width: 100%;
+				height: 100%;
+				padding: 10px;
+				float: none;
+		    margin: 0 auto;
+				color:black;
+			}
+      .swiper-staff{
 				width: 100%;
 				height: 100%;
 				padding: 10px;
@@ -298,16 +314,103 @@ text-transform: uppercase;
 
 /**/
 
-/*social buttons*/
-.btn-circle.btn-lg {
-  width: 50px;
-  height: 50px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 25px;
+.social{
+  margin-left:1px;
+  margin-top:1px;
 }
-/**/
+
+
+/*-----social buttons-----------*/
+.list-inline li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+/*Change icons size here*/
+.social-icons .fa {
+	font-size: 1.8em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fa {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fa{
+	border-radius: 50%;
+}
+.social-icons.icon-rounded .fa{
+	border-radius:5px;
+}
+.social-icons.icon-flat .fa{
+	border-radius: 0;
+}
+
+.social-icons .fa:hover, .social-icons .fa:active {
+	color: #FFF;
+	-webkit-box-shadow: 1px 1px 3px #333;
+	-moz-box-shadow: 1px 1px 3px #333;
+	box-shadow: 1px 1px 3px #333;
+}
+.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
+ 	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active {
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+}
+
+.social-icons .fa-adn{background-color:#504e54;}
+.social-icons .fa-apple{background-color:#aeb5c5;}
+.social-icons .fa-android{background-color:#A5C63B;}
+.social-icons .fa-bitbucket,.social-icons .fa-bitbucket-square{background-color:#003366;}
+.social-icons .fa-bitcoin,.social-icons .fa-btc{background-color:#F7931A;}
+.social-icons .fa-css3{background-color:#1572B7;}
+.social-icons .fa-dribbble{background-color:#F46899;}
+.social-icons .fa-dropbox{background-color:#018BD3;}
+.social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}
+.social-icons .fa-flickr{background-color:#FF0084;}
+.social-icons .fa-foursquare{background-color:#0086BE;}
+.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;}
+.social-icons .fa-google-plus,.social-icons .fa-google-plus-square{background-color:#CF3D2E;}
+.social-icons .fa-html5{background-color:#E54D26;}
+.social-icons .fa-instagram{background-color:#A1755C;}
+.social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;}
+.social-icons .fa-linux{background-color:#FBC002;color:#333;}
+.social-icons .fa-maxcdn{background-color:#F6AE1C;}
+.social-icons .fa-pagelines{background-color:#241E20;color:#3984EA;}
+.social-icons .fa-pinterest,.social-icons .fa-pinterest-square{background-color:#CC2127;}
+.social-icons .fa-renren{background-color:#025DAC;}
+.social-icons .fa-skype{background-color:#01AEF2;}
+.social-icons .fa-stack-exchange{background-color:#245590;}
+.social-icons .fa-stack-overflow{background-color:#FF7300;}
+.social-icons .fa-trello{background-color:#265A7F;}
+.social-icons .fa-tumblr,.social-icons .fa-tumblr-square{background-color:#314E6C;}
+.social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;}
+.social-icons .fa-vimeo-square{background-color:#229ACC;}
+.social-icons .fa-vk{background-color:#375474;}
+.social-icons .fa-weibo{background-color:#D72B2B;}
+.social-icons .fa-windows{background-color:#12B6F3;}
+.social-icons .fa-xing,.social-icons .fa-xing-square{background-color:#00555C;}
+.social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
+ /*-----------------------*/
 
 </style>
 
@@ -338,6 +441,11 @@ text-transform: uppercase;
 	        <a class="nav-link" href="#section5">Sign up</a>
 	      </li>
 	    </ul>
+      <ul class="nav navbar-nav navbar-right">
+               <li><a href="https://www.facebook.com/historymakersiceland/?fref=ts" target="_blank" class="btn btn-primary social btn-sm"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+               <li><a href="https://www.instagram.com/historymakersiceland/" target="_blank" class="btn btn-primary social btn-sm"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+               <li><a class="btn btn-primary social btn-sm"><i class="fa fa-twitter" style="color:white;"></i></a></li>
+           </ul>
 	  </div>
 	</nav>
 
@@ -346,7 +454,12 @@ text-transform: uppercase;
 
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(https://s26.postimg.org/bi4ju0exl/hm_banner9.jpg); color:white; font-size:50px; color:#64B5F6;">History Makers</div>
+            <div class="swiper-slide" style="background-image:url(https://s26.postimg.org/bi4ju0exl/hm_banner9.jpg);">
+              <div style="margin-bottom:500px;">
+                <h1 style="color:#0277BD;">HISTORY MAKERS</h1>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://s26.postimg.org/e0erec97d/hm_cover.jpg)">Slide 6</div>
             <div class="swiper-slide" style="background-image:url(https://s26.postimg.org/dccsy0ck9/hm_banner.jpg)"></div>
             <div class="swiper-slide" style="background-image:url(https://s26.postimg.org/4g7hn0wpl/hm_Photo.jpg)">Slide 3</div>
             <div class="swiper-slide" style="background-image:url(https://s26.postimg.org/ttv7b5nkp/hm_banner5.jpg)">Slide 4</div>
@@ -419,7 +532,7 @@ text-transform: uppercase;
 
 					</div>
 					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
+				<!--	<div class="swiper-pagination"></div>-->
 					<!-- Add Arrows -->
 					<div class="swiper-button-next swiper-button-white" style="margin-right:-39px;"></div>
 					<div class="swiper-button-prev swiper-button-white" style="margin-left: -39px;"></div>
@@ -428,15 +541,97 @@ text-transform: uppercase;
 
 		</section>
 		<div id="section4" class="container">
-			<h1>Staff</h1>
+			<h1>Meet the staff!</h1>
+      <div class="swiper-staff">
+					<div class="swiper-wrapper">
+            <!--Slide one-->
+            <div class="swiper-slide">
+            <!--	<div class="row">-->
+                <div class="card">
+                  <img class="card-img-top" src="images/staff2-hm.jpg" style="width:100%;
+                height:auto;" >
+                  <div class="card-block">
+                    <p class="card-text"></p>
+                    <p class="card-text" style="text-align:center;"><small class="text-muted"></small></p>
+                  </div>
+<!--</div>-->
+                </div>
+                </div>
+							<div class="swiper-slide">
+							<!--	<div class="row">-->
+									<div class="card">
+                	  <img class="card-img-top" src="https://s26.postimg.org/x1o77uie1/soley_hm.jpg" style="width:100%;
+                  height:auto;" >
+                	  <div class="card-block">
+                	    <p class="card-text">Loreum ipsum sit amet dolor</p>
+                	    <p class="card-text" style="text-align:center;"><small class="text-muted"></small></p>
+                	  </div>
+	<!--</div>-->
+    						  </div>
+    							</div>
+                  <div class="swiper-slide">
+    							<!--	<div class="row">-->
+    									<div class="card">
+                    	  <img class="card-img-top" src="https://s26.postimg.org/5scttchax/einar_hm.jpg" style="width:100%;
+                      height:auto;" >
+                    	  <div class="card-block">
+                    	    <p class="card-text">Loreum ipsum sit amet dolor</p>
+                    	    <p class="card-text" style="text-align:center;"><small class="text-muted"></small></p>
+                    	  </div>
+    	<!--</div>-->
+        						  </div>
+        							</div>
+                      <div class="swiper-slide">
+        							<!--	<div class="row">-->
+        									<div class="card">
+                        	  <img class="card-img-top" src="https://s26.postimg.org/5xgl30om1/linda2_hm.jpg" style="width:100%;
+                          height:auto;" >
+                        	  <div class="card-block">
+                        	    <p class="card-text">Loreum ipsum sit amet dolor</p>
+                        	    <p class="card-text" style="text-align:center;"><small class="text-muted"></small></p>
+                        	  </div>
+        	<!--</div>-->
+            						  </div>
+            							</div>
+                          <div class="swiper-slide">
+            							<!--	<div class="row">-->
+            									<div class="card">
+                            	  <img class="card-img-top" src="https://s26.postimg.org/46xk1j72x/david_hm.jpg" style="width:100%;
+                              height:auto;" >
+                            	  <div class="card-block">
+                            	    <p class="card-text">Loreum ipsum sit amet dolor</p>
+                            	    <p class="card-text" style="text-align:center;"><small class="text-muted"></small></p>
+                            	  </div>
+            	<!--</div>-->
+                						  </div>
+                							</div>
+                              <div class="swiper-slide">
+                              <!--	<div class="row">-->
+                                  <div class="card">
+                                    <img class="card-img-top" src="https://s26.postimg.org/q7dwi5pqx/ester_hm.jpg" style="width:100%;
+                                  height:auto;" >
+                                    <div class="card-block">
+                                      <p class="card-text">Loreum ipsum sit amet dolor</p>
+                                      <p class="card-text" style="text-align:center;"><small class="text-muted"></small></p>
+                                    </div>
+                  <!--</div>-->
+                                  </div>
+                                  </div>
+
+					</div>
+					<!-- Add Pagination -->
+				<!--	<div class="swiper-pagination" style="bottom:-52px;"></div>-->
+					<!-- Add Arrows -->
+					<div class="swiper-button-next swiper-button-white" style="margin-right:-39px;"></div>
+					<div class="swiper-button-prev swiper-button-white" style="margin-left: -39px;"></div>
+			</div>
 
 
 		</div>
 		<div id="section5" class="container">
-			<h1>Sign up</h1>
-			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		</div>
+			<h1 data-aos="zoom-in">Sign up!</h1>
+        <button class="btn btn-primary">Press here to sign up!</button>
+    </div>
 
 
   <footer>
@@ -447,19 +642,19 @@ text-transform: uppercase;
         </div>
   			<div class="col-sm-4">
   				<div class="footer-block text-center">
+            <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+              <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
+              <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
+              <li> <a href="#"><i class="fa fa-youtube-square"></i></a></li>
+                </ul>
   					<p class="copyright">
               <small class="text-muted">© Alex Ívar Ívarsson - 2017</small>
   					</p>
   				</div>
   			</div>
   			<div class="col-sm-4">
-  				<div class="footer-block">
-  					<ul class="list-inline pull-right social-icon">
-  						<li><a href=""><i class="fa fa-facebook"></i></a></li>
-  						<li><a href=""><i class="fa fa-twitter"></i></a></li>
-  						<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-  					</ul>
-  				</div>
+
   			</div>
   		</div>
   	</div>
@@ -468,6 +663,7 @@ text-transform: uppercase;
     <!-- Swiper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
@@ -605,7 +801,7 @@ text-transform: uppercase;
         paginationClickable: true,
         spaceBetween: 30,
         centeredSlides: true,
-        autoplay: 7000,
+      //  autoplay: 7000,
         autoplayDisableOnInteraction: false,
 				speed: 600,
 				effect: 'fade',
@@ -621,6 +817,14 @@ text-transform: uppercase;
 			prevButton: '.swiper-button-prev'
 		});
 
+    var swiper3 = new Swiper('.swiper-staff', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      effect: 'flip',
+      grabCursor: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev'
+    });
 
 		//navbar smooth scroll
 		$(".navbar .collapse ul li a[href^='#']").on('click', function(e) {
