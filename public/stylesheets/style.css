@@ -141,11 +141,15 @@ margin-top: 85px;
 		align-items: center;
 }
 
+.btn:active{
+    outline: none;
+}
+
 /*----------Sections-------------------*/
 
 
 #section1 {
-padding-top: 150px;
+/*padding-top: 150px;*/
 padding-bottom: 125px;
 padding-right: 75px;
 padding-left: 75px;

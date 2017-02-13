@@ -78,7 +78,10 @@
     </div>
 
 		<div id="section1">
-		  <h1>Markmið</h1>
+      <div style="text-align:center;">
+        <a href="#section1" class="btn btn-primary" id="downButton" style="position: absolute; bottom: 122px;"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true" style="color:white;"></i></a>
+      </div>
+		  <h1 style="padding-top:150px;">Markmið</h1>
 			<div class="row">
   <div class="col-sm-5 col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><strong>MARKMIÐ</strong> History Makers er að byggja upp leiðtoga og styðja efnilega einstaklinga, til að hafa jákvæð áhrif á samfélag sitt til framtíðar.
 </div>
@@ -512,6 +515,7 @@ Kennslan á námskeiðinu tekur mið af 8 grunngildum  sem við trúum að Guð 
     <!-- Initialize Swiper -->
     <script>
 		//initialize AOS. Animations
+
 		  AOS.init();
 
       (function() {
@@ -604,6 +608,25 @@ Kennslan á námskeiðinu tekur mið af 8 grunngildum  sem við trúum að Guð 
      });
 
 });
+
+$("#downButton").on('click', function(e){
+  // prevent default anchor click behavior
+  e.preventDefault();
+
+  // store hash
+  var hash = this.hash;
+
+  // animate
+  $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 2000, function(){
+
+      // when done, add hash to url
+      // (default click behaviour)
+      window.location.hash = hash;
+    });
+});
+
 var navMain = $("#navbarSupportedContent");
 	 navMain.on("click", "a", null, function () {
 			 navMain.collapse('hide');
