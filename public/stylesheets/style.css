@@ -144,6 +144,11 @@ margin-top: 85px;
 
 .btn:active{
     outline: none;
+		text-decoration : none
+}
+#downButton:hover{
+	text-decoration : none;
+	border-color:#1E88E5;
 }
 
 /*----------Sections-------------------*/
@@ -157,7 +162,8 @@ padding-left: 75px;
 margin-top: 0px;
 margin-bottom: 5px;
 color: #fff;
-background-color: #1E88E5;}
+background-color: #0275D8;
+text-decoration : none}
 #section2 {
 	padding-top: 125px;
 	padding-bottom: 125px;
@@ -166,7 +172,7 @@ background-color: #1E88E5;}
 	margin-top: 0px;
 	margin-bottom: 5px;
 	color: #fff;
-	background-color: #1E88E5;}
+	background-color: #0275D8;}
 #section3 {
 	padding-top: 125px;
 	padding-bottom: 125px;
@@ -175,7 +181,7 @@ background-color: #1E88E5;}
 	margin-top: 0px;
 	margin-bottom: 5px;
 	color: #fff;
-	background-color: #1E88E5;}
+	background-color: #0275D8;}
 #section4 {
 	padding-top: 125px;
 	padding-bottom: 125px;
@@ -184,7 +190,7 @@ background-color: #1E88E5;}
 	margin-top: 0px;
 	margin-bottom: 5px;
 	color: #fff;
-	background-color: #1E88E5;}
+	background-color: #0275D8;}
 #section5 {
 	padding-top: 125px;
 	padding-bottom: 125px;
@@ -193,7 +199,7 @@ background-color: #1E88E5;}
 	margin-top: 0px;
 	margin-bottom: 5px;
 	color: #fff;
-	background-color: #ff9800;}
+	background-color: #0275D8;}
 	.section6 {
 	padding-top: 75px;
 	padding-bottom: 125px;
@@ -202,7 +208,7 @@ background-color: #1E88E5;}
 	margin-top: -5px;
 	margin-bottom: 5px;
 	color: #fff;
-	background-color: #1E88E5;}
+	background-color: #0275D8;}
 
 	#section7{
 		padding-top: 150px;
@@ -212,7 +218,7 @@ background-color: #1E88E5;}
 		margin-top: 0px;
 		margin-bottom: 5px;
 		color: #fff;
-		background-color: #1E88E5;
+		background-color: #0275D8;
 	}
 	/*---------Section ends---------------------*/
 
@@ -416,7 +422,7 @@ transform: scale(1.1) rotate(360deg);
 .social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;}
 .social-icons .fa-google-plus,.social-icons .fa-google-plus-square{background-color:#CF3D2E;}
 .social-icons .fa-html5{background-color:#E54D26;}
-.social-icons .fa-instagram{background-color:#9b6954;}
+.social-icons .fa-instagram{background-color:#9370DB;}
 .social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;}
 .social-icons .fa-linux{background-color:#FBC002;color:#333;}
 .social-icons .fa-maxcdn{background-color:#F6AE1C;}
@@ -434,7 +440,7 @@ transform: scale(1.1) rotate(360deg);
 .social-icons .fa-weibo{background-color:#D72B2B;}
 .social-icons .fa-windows{background-color:#12B6F3;}
 .social-icons .fa-xing,.social-icons .fa-xing-square{background-color:#00555C;}
-.social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
+.social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#CC181E;}
 /*-----------------------*/
 
 #timeline ul {
@@ -469,7 +475,7 @@ transform: scale(1.1) rotate(360deg);
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #F45B69;
+  background: #ff9719;
 }
 
 #timeline ul li div::before {
@@ -486,7 +492,7 @@ transform: scale(1.1) rotate(360deg);
 #timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #F45B69 transparent transparent;
+  border-color: transparent #ff9719 transparent transparent;
 }
 
 #timeline ul li:nth-child(even) div { left: -439px; }
@@ -494,7 +500,7 @@ transform: scale(1.1) rotate(360deg);
 #timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #F45B69;
+  border-color: transparent transparent transparent #ff9719;
 }
 
 time {
@@ -506,7 +512,7 @@ time {
 
 #timeline ul li::after { transition: background .5s ease-in-out; }
 
-#timeline ul li.in-view::after { background: #F45B69; }
+#timeline ul li.in-view::after { background: #ff9719; }
 
 #timeline ul li div {
   visibility: hidden;
@@ -543,6 +549,20 @@ time {
 #timeline ul li:nth-child(even) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #F45B69 transparent transparent;
+  border-color: transparent #ff9719 transparent transparent;
 }
 }
+
+.google-maps {
+			 position: relative;
+			 padding-bottom: 75%; // This is the aspect ratio
+			 height: 0;
+			 overflow: hidden;
+	 }
+	 .google-maps iframe {
+			 position: absolute;
+			 top: 0;
+			 left: 0;
+			 width: 100% !important;
+			 height: 100% !important;
+	 }
