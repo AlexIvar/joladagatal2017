@@ -1,7 +1,11 @@
 body{
-	background-color: green;
+	background-color: white;
 }
 
 .card {
 	margin-top:13px;
+}
+
+#myContainer{
+	background-color: green;
 }
