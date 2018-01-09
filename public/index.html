@@ -14,18 +14,19 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Demo styles -->
 
 
 </head>
-<body>
-  <nav class="navbar navbar-light bg-faded">
-
-    <h1 class="navbar-brand mb-0 text-center">Söng textar</h1>
+<body style="background-color:#FFFFFF;">
+  <nav class="navbar navbar-light bg-faded" style="background-color:#1c313a;">
+    <div class="container">
+    <h3 class="" style="color:white;">Söng textar</h3>
+  </div>
   </nav>
 
-  <div class="container" id="stafir" style="border:solid black 1px; margin-top:50px;">
+  <div class="container" id="stafir" style="margin-top:50px;">
     <div class="row">
     <div style="margin:2px;"><a href="#A" type="button" class="btn btn-secondary">A</a></div>
     <div style="margin:2px;"><a href="#B" type="button" class="btn btn-secondary">B</a></div>
@@ -57,7 +58,7 @@
   </div>
 
 
-  <div class="container" id="A" style="border:solid black 1px; margin-top:50px;">
+  <div class="container" id="A" style="border:1px solid #DCDCDC; background-color:#F8F8F8; padding-bottom:15px; margin-top:50px; border-radius:5px;">
     <h1>A</h1>
     <div class="row" style="margin-bottom: 15px;">
   <div class="col-sm-3">
@@ -136,7 +137,7 @@
   </div>
 
 
-    <div class="container" id="B" style="border:solid black 1px; margin-top:50px;">
+    <div class="container" id="B" style="border:1px solid #DCDCDC; background-color:#F8F8F8; padding-bottom:15px; margin-top:50px; border-radius:5px;">
       <h1>B</h1>
       <div class="row" style="margin-bottom: 15px;">
     <div class="col-sm-3">
@@ -214,7 +215,7 @@
   </div>
     </div>
 
-    <div class="container" id="C" style="border:solid black 1px; margin-top:50px;">
+    <div class="container" id="C" style="border:1px solid #DCDCDC; background-color:#F8F8F8; padding-bottom:15px; margin-top:50px; border-radius:5px;">
       <h1>C</h1>
       <div class="row" style="margin-bottom: 15px;">
     <div class="col-sm-3">
@@ -292,7 +293,7 @@
   </div>
     </div>
 
-    <div class="container" id="D" style="border:solid black 1px; margin-top:50px;">
+    <div class="container" id="D" style="border:1px solid #DCDCDC; background-color:#F8F8F8; padding-bottom:15px; margin-top:50px; border-radius:5px;">
       <h1>D</h1>
       <div class="row" style="margin-bottom: 15px;">
     <div class="col-sm-3">
@@ -370,7 +371,7 @@
   </div>
     </div>
 
-    <div class="container" id="E" style="border:solid black 1px; margin-top:50px;">
+    <div class="container" id="E" style="border:1px solid #DCDCDC; background-color:#F8F8F8; padding-bottom:15px; margin-top:50px; border-radius:5px;">
       <h1>E</h1>
       <div class="row" style="margin-bottom: 15px;">
     <div class="col-sm-3">
@@ -476,10 +477,12 @@
 
 $(".card").hover(
   function () {
-    $(this).addClass("animated jello");
+    $(this).addClass("animated pulse");
+    $(this).css("border", "1px solid #60BEEC");
   },
   function () {
-    $(this).removeClass("animated jello");
+    $(this).removeClass("animated pulse");
+    $(this).css("border", "1px solid rgba(0,0,0,.125)");
   }
 );
 
