@@ -19,8 +19,9 @@ a:hover, a:visited, a:link, a:active
 		outline:0 !important;
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 	body.modal-open {
 	    position: fixed;
 	}
  }
+*/
