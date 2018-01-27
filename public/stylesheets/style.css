@@ -27,5 +27,7 @@ a:hover, a:visited, a:link, a:active
 */
 
 body.custombox-open {
-    overflow: visible;
+	overflow: hidden;
+	position:fixed;
+	width: 100%;
 }
